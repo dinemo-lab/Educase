@@ -1,6 +1,9 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 export const Home = () => {
+
+   const navigate = useNavigate();
   return (
     <div className="flex items-center justify-center p-4">
       
@@ -13,11 +16,11 @@ export const Home = () => {
         </div>
         
         <div className="space-y-3 mb-6">
-          <button className="w-full bg-[#6c25ff] text-white py-3 rounded-md font-medium" onClick={() => window.location.href = '/register'}>
+          <button className="w-full bg-[#6c25ff] text-white py-3 rounded-md font-medium" onClick={() => navigate('/register')}>
             Create Account
           </button>
           
-          <button className="w-full bg-purple-200 text-gray-700 py-3 rounded-md font-medium" onClick={() => window.location.href = '/login'}>
+          <button className="w-full bg-purple-200 text-gray-700 py-3 rounded-md font-medium" onClick={() => navigate('/login')}>
             Already Registered? Login
           </button>
         </div>
