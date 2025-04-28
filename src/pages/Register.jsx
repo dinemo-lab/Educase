@@ -1,11 +1,15 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+
 
 export default function Register() {
 
-    
+   
+  const Navigate = useNavigate();
+
   const handleCreateAccount = (e) => {
     e.preventDefault(); 
-    window.location.href = '/profile'; 
+     Navigate('/login');
   }
 
 
