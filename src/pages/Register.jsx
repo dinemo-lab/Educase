@@ -9,7 +9,7 @@ export default function Register() {
 
   const handleCreateAccount = (e) => {
     e.preventDefault(); 
-     Navigate('/login');
+     Navigate('/profile');
   }
 
 
